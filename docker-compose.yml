@@ -2,12 +2,13 @@
 version: "3"
 services:
   app:
-    image: linuxserver/plex
+    image: linuxserver/plex:1.24.4
     network_mode: host
     environment:
       - PUID=1000
       - PGID=1000
       - VERSION=docker
+      - TZ="Europe/Berlin"
     volumes:
       - config:/config
       - transcode:/transcode
