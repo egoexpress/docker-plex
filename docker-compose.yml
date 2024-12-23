@@ -2,7 +2,7 @@ version: "3"
 
 services:
   app:
-    image: linuxserver/plex:1.41.0
+    image: linuxserver/plex:1.41.2
     network_mode: host
     environment:
       - TZ="Europe/Berlin"
